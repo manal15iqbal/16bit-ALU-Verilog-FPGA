@@ -104,6 +104,8 @@ We have 5 displays but our result is a 10 digit BCD number. So we use **page scr
 |Sign LED|R14|Turns on if result is negative|
 |ZERO|P14|Turns on if result is zero|
 
+![Implementation](./images/Implementation.jpg)
+
 ## Results
 
 Post-implementation analysis on the PYNQ-Z2 FPGA shows that the 16-bit ALU design efficiently utilizes hardware resources while supporting all 16 arithmetic and logical operations, BCD conversion, and multiplexed 7-segment display output.
