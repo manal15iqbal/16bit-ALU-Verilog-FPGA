@@ -58,7 +58,7 @@ The binary output is converted to Binary Coded Decimal (BCD) using **Double Dabb
 
 This algorithm is used to convert the binary output result of the ALU into a BCD number which can be given to the decoder IC. The algorithm works in the following way - each 4 bits in the binary number is checked and if it's greater than or equal to 5 then 3 is added to those 4 bits respectively. This checking and updating is done after shifting each bit to the left one after another.
 
-!\[Double\_Dabble](./images/Double\_Dabble\_Algorithm.jpg)
+![Double_Dabble](./images/Double_Dabble_Algorithm.jpg)
 
 ### Time Division Multiplexing
 
@@ -66,11 +66,11 @@ Since we have a limit on the hardware-limited GPIO pins, we have to multiplex th
 If we want to visualise all the displays to be turned on at the same time, we have to shift the enable control at a high frequency so that all of them appear to be turned on at the same time. For this purpose, we use **Time Division Multiplexing at a frequency of 200Hz.**
 We have 5 displays but our result is a 10 digit BCD number. So we use **page scrolling** in which MSB 5 digits are displayed for 3 seconds and then LSB 5 digits are displayed for 3 seconds. In this way we can overcome the limitation of hardware resources.
 
-!\[Schematic](./images/Schematic.jpg)
+![Schematic](./images/Schematic.jpg)
 
 ### Block Design
 
-!\[Block\_Design](./images/Block\_Design.jpg)
+![Block_Design](./images/Block_Design.jpg)
 
 ### GPIO Pin Mapping
 
@@ -126,5 +126,5 @@ Power Consumption:
 
 The design was verified through simulation and hardware testing, and all operations produced correct results on the 7-segment display using BCD conversion and time-division multiplexing.
 
-!\[Results](./images/Results.jpg)
+![Results](./images/Results.jpg)
 
