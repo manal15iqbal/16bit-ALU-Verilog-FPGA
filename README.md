@@ -1,4 +1,4 @@
-# 16bit-ALU-Verilog-FPGA-PynqZ2
+# 16bit-ALU-Verilog-FPGA
 
 ## Overview
 
